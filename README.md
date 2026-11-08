@@ -27,8 +27,8 @@ volume without a designer.
 ## Quick start
 
 ```bash
-git clone https://github.com/Hunterhghs/H-Heuristics-Research-Papers-pipeline.git
-cd H-Heuristics-Research-Papers-pipeline
+git clone https://github.com/Hunterhghs/Research-Papers-pipeline.git
+cd Research-Papers-pipeline
 ./setup.sh                       # Python 3.10+; creates .venv, installs everything (Typst included)
 ./hh make sample-decision-quality  # build PDF + DOCX, run QA with live link checks
 ```
