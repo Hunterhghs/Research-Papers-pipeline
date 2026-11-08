@@ -1,0 +1,72 @@
+# H Heuristics house style. Every renderer (PDF, DOCX, charts) reads this file.
+# Change values here, never in code.
+
+org:
+  name: "H Heuristics"
+  wordmark: "H HEURISTICS"
+  tagline: "Independent research for better decisions"
+  website: ""            # e.g. "https://hheuristics.com" (leave blank to hide)
+  email: ""              # e.g. "research@hheuristics.com"
+  about: >-
+    H Heuristics is an independent research firm. We study how organizations,
+    markets and people make decisions under uncertainty, and turn that evidence
+    into practical guidance for leaders. Our reports combine primary analysis,
+    a review of the best available public evidence and transparent methods.
+  disclaimer: >-
+    This report is provided for general information only and does not constitute
+    investment, legal, tax or other professional advice. Although H Heuristics
+    has taken care to ensure the accuracy of the information contained herein,
+    it makes no warranty, express or implied, as to its accuracy or completeness.
+    Figures labelled as estimates reflect H Heuristics analysis and are subject
+    to revision. Third-party sources are linked in the text and listed in the
+    References. Reproduction is permitted with attribution.
+
+colors:
+  ink: "#1A1D21"         # body text
+  ink_muted: "#5B6470"   # captions, source notes, axis labels
+  navy: "#12263F"        # headings, cover, table headers
+  blue: "#2E6DB4"        # links, kickers, single-series charts
+  accent: "#E07A1F"      # rules, accent bars (decorative only - not for text)
+  rule: "#D5DAE1"        # hairlines, table rules
+  tint: "#F2F5F9"        # callout / zebra fill
+  tint_accent: "#FDF3EA" # key-findings fill
+  # Categorical chart palette - fixed order, never cycled.
+  # Validated for lightness band, chroma, CVD and normal-vision separation.
+  series: ["#2E6DB4", "#E07A1F", "#2A9D8F", "#7C5BB3", "#94A33B", "#C2477A"]
+  sequential: ["#EAF1FA", "#B9D0EC", "#7FA8DA", "#2E6DB4", "#1C4A82", "#12263F"]
+  positive: "#2A9D8F"
+  negative: "#C2477A"
+  neutral: "#9AA5B1"
+
+fonts:
+  # PDF (Typst) and charts use the bundled fonts in brand/fonts.
+  serif: "Source Serif 4"
+  serif_display: "Source Serif 4 Display"
+  sans: "Source Sans 3"
+  mono: "DejaVu Sans Mono"
+  # DOCX uses fonts that ship with Microsoft Office so files render
+  # identically on any reader's machine.
+  docx_body: "Cambria"
+  docx_heading: "Calibri"
+
+layout:
+  paper: "us-letter"     # or "a4"
+  margin_in: 1.0
+  body_size_pt: 10.5
+  leading_em: 0.62       # Typst line spacing
+  figure_width_in: 6.0   # default figure width; allowed range 5.0-6.0
+  figure_min_in: 5.0
+  figure_max_in: 6.0
+  figure_height_in: 3.3  # default chart height
+
+qa:
+  min_pages: 30
+  max_pages: 50
+  min_sections: 6        # numbered top-level sections
+  min_figures: 8
+  min_tables: 4
+  min_links: 25          # in-text hyperlinks
+  min_words: 9000
+  fill_warn: 0.80        # mid-section pages below this fill are flagged
+  tail_warn: 0.45        # last page of a section below this fill is flagged
+  max_gap_in: 1.6        # largest blank vertical gap allowed inside a page

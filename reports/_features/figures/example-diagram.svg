@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="200" viewBox="0 0 600 200">
+  <rect width="600" height="200" fill="#F2F5F9"/>
+  <rect x="30" y="60" width="150" height="80" rx="6" fill="#12263F"/>
+  <rect x="225" y="60" width="150" height="80" rx="6" fill="#2E6DB4"/>
+  <rect x="420" y="60" width="150" height="80" rx="6" fill="#12263F"/>
+  <path d="M180 100 H225 M375 100 H420" stroke="#E07A1F" stroke-width="4"/>
+  <text x="105" y="106" fill="#fff" font-family="Arial" font-size="18" text-anchor="middle">Input</text>
+  <text x="300" y="106" fill="#fff" font-family="Arial" font-size="18" text-anchor="middle">Process</text>
+  <text x="495" y="106" fill="#fff" font-family="Arial" font-size="18" text-anchor="middle">Output</text>
+</svg>

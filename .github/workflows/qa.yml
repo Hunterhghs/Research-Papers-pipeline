@@ -1,0 +1,27 @@
+name: report-qa
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build-and-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install
+        run: ./setup.sh
+      - name: Regression fixture (every element and chart type)
+        run: ./hh qa _features --no-preview
+      - name: Build and check every report
+        run: ./hh batch --all --no-preview
+      - name: Upload PDFs and DOCX
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reports
+          path: output/
